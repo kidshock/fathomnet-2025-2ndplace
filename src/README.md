@@ -14,4 +14,3 @@ Run this to create the taxonomy tree and distance matrix:
 
  - python -m src.train
  
-Note: The -m flag is important – it lets Python properly load the files inside src/.
