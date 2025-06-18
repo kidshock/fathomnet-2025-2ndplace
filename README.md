@@ -22,17 +22,6 @@ Our solution employs a multi-stage pipeline that includes:
 3. **Training Strategy**: The training strategy involved 5-fold cross-validation using PyTorch Lightning, AdamW optimizer, and cosine annealing scheduler. Early stopping and model checkpointing optimized model selection per fold.
 4. **Post-processing**: Inference used a weighted ensemble of 5 models from cross-validation. Each model's predictions were enhanced with 2-view rotational Test-Time Augmentation. The final probability was computed using a weighted geometric mean for optimal performance.
 
-## Repository Structure
-
-```
-├── data/               # Data processing scripts and sample data
-├── models/             # Model definitions and saved weights
-├── configs/            # Configuration files
-├── notebooks/          # Jupyter notebooks for exploration and visualization
-├── scripts/            # Training and inference scripts
-├── results/            # Validation and test results
-└── docs/               # Additional documentation
-```
 
 ## Setup and Installation
 
