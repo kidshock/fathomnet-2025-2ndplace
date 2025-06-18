@@ -1,5 +1,9 @@
-ete3
-fathomnet
-pandas
-numpy
-tqdm
+torch==2.5.1
+torchvision==0.20.1
+pytorch-lightning==2.5.1
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.2.2
+tqdm==4.67.1
+Pillow==11.1.0
+ete3==3.1.3
