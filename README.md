@@ -1,10 +1,8 @@
-# fathomnet-2025-2ndplace
-
 # FathomNet 2025 Competition - 2nd Place Solution
 
 ## Overview
 
-This repository contains the code and documentation for our 2nd place solution in the FathomNet 2025 competition. Our approach leverages advanced computer vision and deep learning techniques to tackle the challenge of marine imagery analysis.
+This repository contains the code and documentation for our 2nd place solution in the FathomNet 2025 competition.
 
 ## Competition Description
 
