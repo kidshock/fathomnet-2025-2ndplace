@@ -17,6 +17,16 @@ Our solution employs a multi-stage pipeline that includes:
 
 1. **Data Preprocessing**: Images were preprocessed with various augmentations for the training set, including random cropping, flips, color jitter, and rotation, to enhance robustness. Validation and test sets underwent resizing and center cropping without aggressive augmentation. Labels were numerically encoded, and the data was split stratifiably into 80% training and 20% validation sets.
 2. **Model Architecture**: The model is a two-stream hierarchical classifier. It uses EfficientNet-V2 backbones to extract features from both a detailed Region of Interest (ROI) and the full contextual image. These features are fused using an uncertainty-guided gating mechanism before being fed to a classifier head. A custom hierarchical loss is employed to incorporate taxonomic relationships.
+$$
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{CE}} + \lambda_h \cdot \mathcal{L}_h
+$$
+
+- $\mathcal{L}_{\text{CE}}$: Cross-Entropy loss with label smoothing.
+- $\mathcal{L}_h$: Hierarchical Distance Penalty — penalizes errors based on taxonomic tree distance.
+- $\lambda_h$: Weight factor controlling the influence of hierarchical alignment.
+
+This formulation helps the model optimize both accuracy and taxonomic consistency in line with the competition's evaluation metric.
+
 3. **Training Strategy**: The training strategy involved 5-fold cross-validation using PyTorch Lightning, AdamW optimizer, and cosine annealing scheduler. Early stopping and model checkpointing optimized model selection per fold.
 4. **Post-processing**: Inference used a weighted ensemble of 5 models from cross-validation. Each model's predictions were enhanced with 2-view rotational Test-Time Augmentation. The final probability was computed using a weighted geometric mean for optimal performance.
 
