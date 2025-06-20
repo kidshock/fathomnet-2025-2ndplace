@@ -20,7 +20,7 @@ Our solution employs a multi-stage pipeline that includes:
 
    
 
-\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{CE}} + \lambda_h \cdot \mathcal{L}_h
+$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{CE}} + \lambda_h \cdot \mathcal{L}_h$
 
 - $\mathcal{L}_{\text{CE}}$: Cross-Entropy loss with label smoothing.
 - $\mathcal{L}_h$: Hierarchical Distance Penalty — penalizes errors based on taxonomic tree distance.
