@@ -19,9 +19,8 @@ Our solution employs a multi-stage pipeline that includes:
 2. **Model Architecture**: The model is a two-stream hierarchical classifier. It uses EfficientNet-V2 backbones to extract features from both a detailed Region of Interest (ROI) and the full contextual image. These features are fused using an uncertainty-guided gating mechanism before being fed to a classifier head. A custom hierarchical loss is employed to incorporate taxonomic relationships.
 
    
-$$
+
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{CE}} + \lambda_h \cdot \mathcal{L}_h
-$$
 
 - $\mathcal{L}_{\text{CE}}$: Cross-Entropy loss with label smoothing.
 - $\mathcal{L}_h$: Hierarchical Distance Penalty — penalizes errors based on taxonomic tree distance.
