@@ -97,6 +97,9 @@ Our solution achieved a hierarchical distance of 1.68 on the test set, placing u
 | Single Model  | 0.55             | 1.95       |
 | Ensemble      | 0.49             | 1.68       |
 
+
+Additional evaluation will be added soon...
+
 ## Key Insights
 
 - Combining the full image with the ROI (Region of Interest) image significantly improves prediction performance compared to using only the ROI image. The two sources of visual information complement each other well.
