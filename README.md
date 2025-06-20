@@ -73,7 +73,7 @@ Run this to create the taxonomy tree and distance matrix:
 ### Inference
 
 
-To simplify inference with our model weights, you can use inference_only.ipynb for inferencing with the test data from the competition (~10 minutes)
+To simplify inference with our model weights, you can use inference_only.ipynb for inferencing with the test data from the competition (~5 minutes with  1 GPU L4) to get the submission csv file.
 
 
 ### Our Solution
