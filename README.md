@@ -28,7 +28,7 @@ L_total = L_CE + λ_h · L_h
 
 This formulation helps the model optimize both accuracy and taxonomic consistency in line with the competition's evaluation metric.
 
-3. **Training Strategy**: The training strategy involved 5-fold cross-validation using PyTorch Lightning, AdamW optimizer, and cosine annealing scheduler. Early stopping and model checkpointing optimized model selection per fold.
+3. **Training Strategy**: The training strategy involved 5-fold cross-validation using PyTorch Lightning, AdamW optimizer, and cosine annealing scheduler. Early stopping and model checkpointing optimized model selection per fold. The models was trained on 4 GPU L4 and took around ~ 8 hours.
 4. **Post-processing**: Inference used a weighted ensemble of 5 models from cross-validation. Each model's predictions were enhanced with 2-view rotational Test-Time Augmentation. The final probability was computed using a weighted geometric mean for optimal performance.
 
 
