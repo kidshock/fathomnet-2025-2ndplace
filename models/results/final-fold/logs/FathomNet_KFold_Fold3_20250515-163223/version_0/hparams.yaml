@@ -1,0 +1,7 @@
+num_classes: 79
+lr: 0.0001
+weight_decay: 0.0001
+h_loss_weight: 0.1
+dropout1: 0.4
+dropout2: 0.3
+hidden_dim: 512
