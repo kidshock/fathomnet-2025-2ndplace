@@ -94,8 +94,8 @@ Our solution achieved a hierarchical distance of 1.68 on the test set, placing u
 
 | Model Variant | Validation Score | Test Score |
 |---------------|------------------|------------|
-| Single Model  | 0.55             | 1.95       |
-| Ensemble      | 0.49             | 1.68       |
+| Single Model  | 0.56             | 1.80       |
+| Ensemble      | ----             | 1.68       |
 
 
 Additional evaluation will be added soon...
