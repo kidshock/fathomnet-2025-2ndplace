@@ -75,7 +75,7 @@ Run this to create the taxonomy tree and distance matrix:
 
  - python -m src.train
  
-
+Updated: The model weights can be found at the FathomNet Model Zoo (FMZ)  : https://huggingface.co/FathomNet/Fathomnet-2025-2ndplace-ensemble-EffNetv2
 ### Inference
 
 
