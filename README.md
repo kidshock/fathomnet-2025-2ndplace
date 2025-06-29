@@ -104,7 +104,7 @@ Additional evaluation will be added soon...
 
 - Combining the full image with the ROI (Region of Interest) image significantly improves prediction performance compared to using only the ROI image. The two sources of visual information complement each other well.
 - Some of the test data appears to be flawed: several ROI images do not contain any species at all and instead focus on empty areas like water or the seabed. This issue may be due to an error during the cropping process when downloading the images, or it could stem from problems in the test annotation file. 
-- If I had more time, I would reimplement the model using BioCLIP or BioCLIP 2. I attempted this before, but it didn’t perform as expected. Later, I realized the issue was that I had incorrectly handled the taxonomic data :(  .I hadn't aligned it properly with the format used during BioCLIP's original training.
+- If we had more time, we would reimplement the model using BioCLIP or BioCLIP 2. We attempted this before, but it didn’t perform as expected. Later, We realized the issue was that I had incorrectly handled the taxonomic data :(  .We hadn't aligned it properly with the format used during BioCLIP's original training.
 
 ## Team Members
 - Vu Hai Thien Long (equal contribution)
