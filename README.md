@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code and documentation for our 2nd place solution in the FathomNet 2025 competition.
+This repository contains the code and documentation for our 2nd place solution in the [FathomNet 2025 competition](https://www.kaggle.com/competitions/fathomnet-2025).
 
 ## Competition Description
 
