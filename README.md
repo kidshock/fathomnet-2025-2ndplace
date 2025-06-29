@@ -107,13 +107,15 @@ Additional evaluation will be added soon...
 - If I had more time, I would reimplement the model using BioCLIP or BioCLIP 2. I attempted this before, but it didn’t perform as expected. Later, I realized the issue was that I had incorrectly handled the taxonomic data :(  .I hadn't aligned it properly with the format used during BioCLIP's original training.
 
 ## Team Members
-- Vu Hai Thien Long (same contribution)
-- Luu Linh Ly (same contribution)
+- Vu Hai Thien Long (equal contribution)
+- Luu Linh Ly (equal contribution)
 
 ## Acknowledgments
 
 - [FathomNet](https://fathomnet.org/) for organizing the competition and providing the dataset
 - Laura Chrobak and Kevin Barnard. FathomNet2025. https://kaggle.com/competitions/fathomnet-2025, 2025. Kaggle.
 
+
+Documented by Luu Linh Ly at ICTLab - USTH
 
 ```
